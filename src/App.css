@@ -4,6 +4,10 @@ a {
   font-weight: bold;
 }
 
+ul {
+  list-style: none;
+}
+
 .header-options:hover {
   border-bottom: 1px solid white;
 }
@@ -11,10 +15,6 @@ a {
 .App {
   text-align: center;
   position: relative;
-}
-
-.App img {
-  width: 100vw;
 }
 
 .App-header {
@@ -27,7 +27,7 @@ a {
 }
 
 .header-logo {
-  transform: translate(-25px);
+  transform: translate(0, -25px);
 }
 
 .header-conteinner {
@@ -43,15 +43,101 @@ a {
   font-size: 13px;
 }
 
+.payment-title {
+  margin: 2em 0;
+}
+
+.payment-innerConteinner {
+  background-color: lightgray;
+  border-radius: 30px;
+  margin: 0 1em 2em;
+  padding: .5em 1em 2em;
+  display: flex;
+  flex-flow: column;
+}
+
+.payment-conteinner ul {
+  padding: 0;
+  display: flex;
+  gap: 2em;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.payment-conteinner ul li{
+  background-color: rgb(39, 39, 202);
+  color: white;
+  font-size: 2em;
+  font-weight: bolder;
+  padding: .6em .8em;
+  border-radius: 20px;
+}
+
+.payment-conteinner ul li:hover {
+  cursor: pointer;
+}
+
+.payment-conteinner ul .selected {
+  background-color: rgb(0, 0, 73);
+}
+
+.payment-conteinner img{
+  width: 300px;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.payment-button {
+  background-color: rgb(39, 39, 202);
+  color: white;
+  border-radius: 10px;
+  margin: auto;
+  width: 200px;
+  padding: .5em;
+  margin-top: 2em;
+}
+
+.button {
+  transition: transform .2s;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  transition: transform .2s;
+}
+
+.payment-info {
+  background-color: rgb(255, 230, 91);
+  font-size: 1.2rem;
+  padding: 1em 2em 1.5em;
+}
+
+.payment-info-button {
+  max-width: 300px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+  background-color: green;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.payment-info-button > img {
+  margin: 0;
+  width: 40px;
+}
+
 .info-conteinner {
   display: flex;
   flex-direction: column;
   padding: 30px 10vw;
-  gap: 2em;
+  gap: 1em;
 }
 
-.info-conteinner > img {
-  position: absolute;
-  left: 0;
-  width: 100vw;
+.info-image {
+  width: 100%;
 }

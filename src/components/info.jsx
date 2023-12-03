@@ -3,8 +3,8 @@ import React from "react";
 export const Info = () => {
     return (
         <>
-            <img src="../images/banner-tag.jpg"></img>
-            <article className="info-conteinner">
+            <img src="../images/banner-tag.jpg" className="info-image"></img>
+            <article id="info" className="info-conteinner">
                 <h3>
                     O Que É Uma TAG Veicular?
                 </h3>
